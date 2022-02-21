@@ -1,11 +1,35 @@
-1.4.0 (2020-01-26)
+1.4.4 (2022-02-20)
+--------------------------------------------------
+
+- Minor rebuild to ensure Windows wheel documentation is correct ReST.
+
+
+1.4.3 (2022-02-20)
+--------------------------------------------------
+
+- Use cibuildwheel to tests and build wheels on many OSes (with GitHub actions)
+- Update supported Python versions. We cannot support what we cannot test:
+  - Drop official support for Python 2.7. 
+    Older version still run on Python 2.7+
+  - Ensure that we compile with Python 3.10 and plan for 3.11 
+  - Set minimum supported version of Python to 3.6
+  - Run tests in CI on 3.6, 3.7, 3.8, 3.9 and 3.10
+
+1.4.2 (2021-03-27)
 --------------------------------------------------
 
 - Add method ``iter_long``, that performs the modified
   Aho-Corasick search procedure matching the longest
   words from set.
 
-1.4.0 (2019-01-24)
+1.4.1 (2020-01-26)
+--------------------------------------------------
+
+- Add method ``iter_long``, that performs the modified
+  Aho-Corasick search procedure matching the longest
+  words from set.
+
+1.4.0 (2019-01-14)
 --------------------------------------------------
 
 - Change internal trie representation thanks to that performance
